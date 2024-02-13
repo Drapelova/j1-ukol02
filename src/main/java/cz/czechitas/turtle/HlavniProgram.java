@@ -12,25 +12,16 @@ public class HlavniProgram {
     {
         double velikostStrany;
         velikostStrany = 150;
-
         double velikostStranyB;
         velikostStranyB = 200;
-
         var velikostPrepony = Math.sqrt(2 * Math.pow(velikostStrany, 2));
     }
 
     public void start() {
-
-        /*nakresliRovnostrannyTrojuhelnik(150);
-        nakresliCtverec(100);
-        nakresliObdelnik(100, 150);
-        nakresliKolecko(30);
-        nakresliZmrzlinu();
+        /* nakresliZmrzlinu();
         nakresliSnehulaka();
         nakresliMasinku();
-
          */
-
     }
 
     public void nakresliRovnostrannyTrojuhelnik(double velikostStrany) {
@@ -60,7 +51,6 @@ public class HlavniProgram {
         zofka.turnLeft(90);
         zofka.move(velikostStrany);
         zofka.turnLeft(90);
-
     }
 
     public void nakresliObdelnik(double velikostStrany, double velikostStranyB) {
@@ -78,8 +68,6 @@ public class HlavniProgram {
         for (int i = 0; i < 18; i++) {
             zofka.move(velikostStranyB);
             zofka.turnLeft(20);
-
-
         }
     }
 
@@ -88,7 +76,6 @@ public class HlavniProgram {
         nakresliRovnostrannyTrojuhelnik(200);
         zofka.turnRight(120);
         nakresliKolecko(46);
-
     }
 
     public void nakresliSnehulaka() {
@@ -136,7 +123,5 @@ public class HlavniProgram {
         zofka.move(30);
         zofka.turnLeft(180);
         nakresliRovnoramennyTrojuhelnik(100, 140);
-
-
     }
 }
